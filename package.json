@@ -1,0 +1,43 @@
+{
+  "name": "bankstatementparser-mcp",
+  "version": "0.1.1",
+  "description": "MCP (Model Context Protocol) server for Bank Statement Parser — extract balance-verified transactions from digital, scanned, or password-protected bank statement PDFs into JSON, CSV, QBO, OFX, Xero CSV, IIF, or Tally XML.",
+  "homepage": "https://bankstatementparser.net",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yavuzceliker/bankstatementparser-mcp.git"
+  },
+  "author": "Bank Statement Parser <info@bankstatementparser.net>",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "bankstatementparser-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x dist/index.js",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "bank-statement",
+    "pdf-parser",
+    "qbo",
+    "ofx",
+    "xero",
+    "fintech"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
