@@ -1,0 +1,32 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.yavuzceliker/bankstatementparser-mcp",
+  "title": "Bank Statement Parser",
+  "websiteUrl": "https://bankstatementparser.net",
+  "description": "Convert scanned & encrypted PDF bank statements to reconciled QBO, Xero, OFX, CSV & JSON.",
+  "repository": {
+    "url": "https://github.com/yavuzceliker/bankstatementparser-mcp",
+    "source": "github",
+    "id": "1462329275"
+  },
+  "version": "0.1.2",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "bankstatementparser-mcp",
+      "version": "0.1.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "description": "API key from https://bankstatementparser.net (15 free pages, no card required)",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": true,
+          "name": "BANK_STATEMENT_PARSER_API_KEY"
+        }
+      ]
+    }
+  ]
+}
