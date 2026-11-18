@@ -1,6 +1,7 @@
 {
   "name": "bankstatementparser-mcp",
-  "version": "0.1.1",
+  "mcpName": "io.github.yavuzceliker/bankstatementparser-mcp",
+  "version": "0.1.2",
   "description": "MCP (Model Context Protocol) server for Bank Statement Parser — extract balance-verified transactions from digital, scanned, or password-protected bank statement PDFs into JSON, CSV, QBO, OFX, Xero CSV, IIF, or Tally XML.",
   "homepage": "https://bankstatementparser.net",
   "repository": {
